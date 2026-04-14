@@ -1,0 +1,6 @@
+node_modules/
+data/pipeline.db
+data/pipeline.db-journal
+npm-debug.log
+.DS_Store
+.env

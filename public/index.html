@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pipeline WooCommerce - HubSpot</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">PV</span>
+      <div>
+        <h1>Pipeline de Ventas</h1>
+        <p>WooCommerce <span class="sep">&rarr;</span> HubSpot CRM (simulado)</p>
+      </div>
+    </div>
+    <div class="actions">
+      <button id="btnRefrescar" class="btn btn-primary">Actualizar</button>
+    </div>
+  </header>
+
+  <section class="metrics">
+    <div class="metric-card">
+      <span class="metric-label">Ventas del mes (CLP)</span>
+      <span class="metric-value" id="mVentasMes">-</span>
+      <span class="metric-sub" id="mVentasMesCantidad"></span>
+    </div>
+    <div class="metric-card">
+      <span class="metric-label">Pipeline del mes (CLP)</span>
+      <span class="metric-value" id="mPipelineMes">-</span>
+      <span class="metric-sub" id="mPipelineMesCantidad"></span>
+    </div>
+    <div class="metric-card">
+      <span class="metric-label">Contactos nuevos</span>
+      <span class="metric-value" id="mContactosNuevos">-</span>
+      <span class="metric-sub">este mes</span>
+    </div>
+    <div class="metric-card">
+      <span class="metric-label">Deals totales</span>
+      <span class="metric-value" id="mDealsTotales">-</span>
+      <span class="metric-sub" id="mDealsBreakdown"></span>
+    </div>
+  </section>
+
+  <main>
+    <h2 class="section-title">Kanban de deals</h2>
+    <section class="kanban" id="kanban"></section>
+
+    <h2 class="section-title">Actividad reciente</h2>
+    <section class="activity">
+      <ul id="eventos" class="event-list"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Hector Riquelme - Demo pipeline CRM</span>
+    <span>Precios en CLP - Contexto chileno</span>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
