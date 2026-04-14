@@ -2,6 +2,11 @@
 
 Microservicio en Node.js + Express que sincroniza las ventas de **WooCommerce** hacia **HubSpot CRM** (ambas APIs simuladas con datos mock). Incluye un panel web con dashboard tipo kanban, contexto 100% chileno y precios en CLP.
 
+
+## Pantallas
+
+![hubspot-kanban](docs/screenshots/hubspot-kanban.png)
+
 ## Caracteristicas
 
 - Webhook receptor que procesa nuevas ordenes de WooCommerce.
